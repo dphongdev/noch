@@ -1,3 +1,5 @@
+/* Recycle Code */
+
 .App1 {
   position: absolute;
   top: 50%;
@@ -6,6 +8,8 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
+/* Common */
 
 body, html {
   background-color: #161C20;
@@ -16,6 +20,27 @@ body, html {
 input:focus {
   outline: none;
 }
+
 ::placeholder {
   color: rgb(188 222 217) !important;
+}
+
+/* Home page */
+
+#btnPlayNow {
+  position: relative;
+  width: 87px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  height: 47px;
+  line-height: 47px;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 20px;
+  border-radius: 34px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
