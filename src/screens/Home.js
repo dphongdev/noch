@@ -20,7 +20,7 @@ export function Home(props) {
             top: 10px;
             vertical-align: middle;
             display: inline-block;
-            width: '220px',
+            width: '220px';
             height: '24px'
     `,
         NicknameWrapper = styled.div`
@@ -37,9 +37,9 @@ export function Home(props) {
             display: inline-block;
     `
         ,
-        PlayNowButton = styled.div`
+        NochButton = styled.div`
             /* position: initial; */
-            width: 120px;
+            width: ${props => props.width};
             color: rgb(255, 255, 255);
             font-weight: bold;
             text-align: center;
@@ -50,20 +50,22 @@ export function Home(props) {
             line-height: 47px;
             box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 20px;
             border-radius: 34px;
-            display: inline-block;
+            /* display: inline-block; */
             margin-top: 10px;
             /* margin-bottom: 50px; */
             background-image: url('images/btnPlayNow.png');
-            margin-left:10px;
+            margin-left:4px;
     `
     return (<>
         <Wrapper class={props.class}>
             <h1>nốichữ.com</h1>
+            <h2>TagCanvas</h2>
             <NicknameWrapper>
                 <Nickname autoFocus id="txtUsername" placeholder="Nickname" maxLength="24" type="text" />
             </NicknameWrapper>
-            <PlayNowButton style={{width:"160px"}}>Chơi với bạn</PlayNowButton>
-            <PlayNowButton>Chơi liền</PlayNowButton> <br />
+            <NochButton width="160px">Chơi với bạn</NochButton>
+            <NochButton width="125px">Chơi liền</NochButton>
+            <NochButton width="95px">Thoát</NochButton>
         </Wrapper>
     </>);
 }
