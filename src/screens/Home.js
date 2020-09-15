@@ -34,11 +34,10 @@ export function Home(props) {
             border-radius: 29px;
             border: 2px solid rgba(0, 0, 0, 1);
             overflow: hidden;
-            display: inline-block;
+            /* display: inline-block; */
     `
         ,
         NochButton = styled.div`
-            /* position: initial; */
             width: ${props => props.width};
             color: rgb(255, 255, 255);
             font-weight: bold;
@@ -55,11 +54,13 @@ export function Home(props) {
             /* margin-bottom: 50px; */
             background-image: url('images/btnPlayNow.png');
             margin-left:4px;
-    `
+    `,
+        iframe = styled.iframe`
+        `
     return (<>
         <Wrapper class={props.class}>
             <h1>nốichữ.com</h1>
-            <h2>TagCanvas</h2>
+            <iframe frameBorder="0" scrolling="no" src="tagcanvas.html" title="TagCanvas"></iframe>
             <NicknameWrapper>
                 <Nickname autoFocus id="txtUsername" placeholder="Nickname" maxLength="24" type="text" />
             </NicknameWrapper>
