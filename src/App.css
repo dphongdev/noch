@@ -14,6 +14,11 @@ body, html {
   background-color: #161C20;
   width: 100%;
   height: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 input:focus {
@@ -23,5 +28,9 @@ input:focus {
 ::placeholder {
   color: rgb(188 222 217) !important;
 }
-h1{color: blueviolet;}
+h1{
+  color: blueviolet; 
+  text-align: right; 
+  /* text-decoration: underline; */
+}
 

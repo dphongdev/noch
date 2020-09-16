@@ -16,37 +16,37 @@
 
 <body>
     <div id="myCanvasContainer">
-        <canvas width="300" height="300" id="myCanvas">
+        <canvas width="250" height="250" id="myCanvas" style="font-family: 'Courier New', Courier, monospace;">
             <p>Anything in here will be replaced on browsers that support the canvas element</p>
         </canvas>
     </div>
     <div style="display: none">
         <div id="taglist">
             <ul>
-                <li><a href="#fake1" onclick="return tpu(this)">Fake link 1</a></li>
-                <li><a href="#fake2" onclick="return tpu(this)">Fake link 2</a></li>
-                <li><a href="#fake3" onclick="return tpu(this)">Fake link 3</a></li>
-                <li><a href="#fake4" onclick="return tpu(this)">Fake link 4</a></li>
-                <li><a href="#fake5" onclick="return tpu(this)">Fake link 5</a></li>
-                <li><a href="#fake6" onclick="return tpu(this)">Fake link 6</a></li>
+                <li><a href="#fake1" onclick="return tpu(this)">Sương gió</a></li>
+                <li><a href="#fake2" onclick="return tpu(this)">Phủ</a></li>
+                <li><a href="#fake3" onclick="return tpu(this)">Đời trai</a></li>
+                <li><a href="#fake4" onclick="return tpu(this)">Tương Lai</a></li>
+                <li><a href="#fake5" onclick="return tpu(this)">Nhờ</a></li>
+                <li><a href="#fake6" onclick="return tpu(this)">Nhà ngoại</a></li>
             </ul>
             <ul>
                 <li><a></a>SVGGraph</a></li>
-                <li><a href="#" onclick="return tpu(this)">JPEG Saver</a></li>
-                <li><a href="#" onclick="return tpu(this)">Downloads</a></li>
-                <li><a href="#" onclick="return tpu(this)">Google</a></li>
+                <li><a href="#" onclick="return tpu(this)">Vạn sự</a></li>
+                <li><a href="#" onclick="return tpu(this)">Tùy khoai</a></li>
+                <!-- <li><a href="#" onclick="return tpu(this)">Google</a></li>
                 <li><a href="#" onclick="return tpu(this)">Yahoo!</a></li>
                 <li><a href="#" onclick="return tpu(this)">Microsoft</a></li>
-                <li><a href="#" onclick="return tpu(this)">BBC</a></li>
+                <li><a href="#" onclick="return tpu(this)">BBC</a></li> -->
             </ul>
         </div>
     </div>
 
     <script type="text/javascript">
         var oopts = {
-            textFont: 'Impact,Arial Black,sans-serif',
+            textFont:  "Courier New, Courier, monospace",
             textHeight: 20,
-            maxSpeed: 0.1,
+            maxSpeed: 0.5,
             decel: 0.9,
             depth: 0.99,
             outlineColour: '#f6f',
@@ -56,7 +56,7 @@
             wheelZoom: false
         }, ttags = 'taglist', lock, shape = 'sphere';
         window.onload = function () {
-            TagCanvas.textFont = 'Trebuchet MS, Helvetica, sans-serif';
+            TagCanvas.textFont = 'Courier New, Courier, monospace';
             TagCanvas.textColour = '#fff';
             TagCanvas.textHeight = 25;
             TagCanvas.outlineMethod = 'block';
@@ -73,7 +73,7 @@
             TagCanvas.shadowBlur = 3;
             TagCanvas.weight = false;
             TagCanvas.imageScale = null;
-            TagCanvas.fadeIn = 1000;
+            TagCanvas.fadeIn = 500;
             TagCanvas.clickToFront = 600;
             try {
                 TagCanvas.Start('myCanvas', 'taglist');
@@ -112,7 +112,7 @@
             return false;
         }
     </script>
-    <div style="position: absolute; bottom: 0; left: 0; width: 100px; height: 100px; background-color: aqua;"></div>
+    <div style="position: absolute; bottom: 0; left: 0; width: 100px; height: 100px; background-color: aqua; display: none"></div>
 </body>
 
 </html>
