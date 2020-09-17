@@ -30,6 +30,12 @@ export function Home(props) {
       @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
         top: 6px;
       }
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: rgb(188 222 217) !important;
+      }
     `,
     NicknameWrapper = styled.div`
       width: 244px;
@@ -68,11 +74,17 @@ export function Home(props) {
       background-color: #fff;
       color: #fff;
       margin-top: -24px;
+    `,
+    Logo = styled.h1`
+      color: blueviolet;
+      text-align: center;
+      /* text-decoration: underline; */
+      font-family: 'Fira Code', monospace;
     `;
   return (
     <>
       <Wrapper class={props.class}>
-        <h1>nốichữ.com</h1>
+        <Logo>noichu.com</Logo>
         <NochLine />
         <iframe
           width='250px'

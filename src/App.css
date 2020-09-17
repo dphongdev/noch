@@ -1,4 +1,14 @@
-/* Recycle Code */
+/* Common */
+body, html {
+  background-color: #161C20;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .App {
   position: absolute;
@@ -7,30 +17,9 @@
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-}
-
-/* Common */
-body, html {
-  background-color: #161C20;
-  width: 100%;
-  height: 100%;
-  font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
 }
-body::-webkit-scrollbar {
+.App::-webkit-scrollbar {
   display: none;
-}
-
-input:focus {
-  outline: none;
-}
-
-::placeholder {
-  color: rgb(188 222 217) !important;
-}
-h1{
-  color: blueviolet; 
-  text-align: right; 
-  /* text-decoration: underline; */
 }
 
