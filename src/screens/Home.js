@@ -81,6 +81,10 @@ export function Home(props) {
       /* text-decoration: underline; */
       font-family: 'Fira Code', monospace;
     `;
+
+    const exitApp = () => {
+      alert('Thì ra bạn chọn cách chơi với dế')
+    }
   return (
     <>
       <Wrapper class={props.class}>
@@ -109,7 +113,7 @@ export function Home(props) {
         <NochButton width='125px' fontSize='22px'>
           Chơi liền
         </NochButton>
-        <NochButton width='95px' fontSize='24px'>
+        <NochButton onClick={exitApp} width='95px' fontSize='24px'>
           Thoát
         </NochButton>
       </Wrapper>
